@@ -5,6 +5,7 @@ from . import views
 urlpatterns = [
     path(r'', views.index, name='index'),
     # path(r'', views.post_list, name='post_list'),
+    path(r'',views.mail_send,name='mail_send'),
     path(r'post/(?P<pk>\d+)/$',views.post_detail,name='post_detail'),
     # path('',views.post_detail,name='post_detail'),
     path(r'post/new/$', views.post_new, name='post_new'),
